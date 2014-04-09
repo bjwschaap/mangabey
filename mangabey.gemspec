@@ -22,5 +22,7 @@ eos
   s.add_development_dependency('rake', '~> 10.2' )
   s.add_development_dependency('rdoc', '~> 4.1')
   s.add_development_dependency('aruba', '~> 0.5')
+  s.add_development_dependency('shotgun', '0.9')
   s.add_runtime_dependency('sinatra','1.4.5')
+  s.add_runtime_dependency('nfsadmin', '0.0.3')
 end

@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     mangabey (0.0.1)
+      nfsadmin (= 0.0.3)
       sinatra (= 1.4.5)
 
 GEM
@@ -24,9 +25,12 @@ GEM
     ffi (1.9.3)
     gherkin (2.12.2)
       multi_json (~> 1.3)
+    gli (2.9.0)
     json (1.8.1)
     multi_json (1.9.2)
     multi_test (0.1.1)
+    nfsadmin (0.0.3)
+      gli (~> 2.9)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
@@ -35,6 +39,8 @@ GEM
       json (~> 1.4)
     rspec-expectations (2.14.5)
       diff-lcs (>= 1.1.3, < 2.0)
+    shotgun (0.9)
+      rack (>= 1.0)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -49,3 +55,4 @@ DEPENDENCIES
   mangabey!
   rake (~> 10.2)
   rdoc (~> 4.1)
+  shotgun (= 0.9)
