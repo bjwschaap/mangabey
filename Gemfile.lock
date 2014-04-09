@@ -3,6 +3,7 @@ PATH
   specs:
     mangabey (0.0.1)
       nfsadmin (= 0.0.3)
+      passenger (= 4.0.41)
       sinatra (= 1.4.5)
 
 GEM
@@ -21,6 +22,7 @@ GEM
       gherkin (~> 2.12)
       multi_json (>= 1.7.5, < 2.0)
       multi_test (>= 0.1.1)
+    daemon_controller (1.2.0)
     diff-lcs (1.2.5)
     ffi (1.9.3)
     gherkin (2.12.2)
@@ -31,6 +33,10 @@ GEM
     multi_test (0.1.1)
     nfsadmin (0.0.3)
       gli (~> 2.9)
+    passenger (4.0.41)
+      daemon_controller (>= 1.2.0)
+      rack
+      rake (>= 0.8.1)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
