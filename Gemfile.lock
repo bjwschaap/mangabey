@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    mangabey (0.0.2)
-      nfsadmin (= 0.0.3)
+    mangabey (0.0.3)
+      nfsadmin (= 0.0.4)
       sinatra (= 1.4.5)
 
 GEM
@@ -30,7 +30,7 @@ GEM
     json (1.8.1)
     multi_json (1.9.2)
     multi_test (0.1.1)
-    nfsadmin (0.0.3)
+    nfsadmin (0.0.4)
       gli (~> 2.9)
     passenger (4.0.41)
       daemon_controller (>= 1.2.0)
