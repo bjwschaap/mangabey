@@ -1,9 +1,8 @@
 PATH
   remote: .
   specs:
-    mangabey (0.0.1)
+    mangabey (0.0.2)
       nfsadmin (= 0.0.3)
-      passenger (= 4.0.41)
       sinatra (= 1.4.5)
 
 GEM
@@ -59,6 +58,7 @@ PLATFORMS
 DEPENDENCIES
   aruba (~> 0.5)
   mangabey!
+  passenger (~> 4.0)
   rake (~> 10.2)
   rdoc (~> 4.1)
   shotgun (= 0.9)
