@@ -25,4 +25,5 @@ eos
   s.add_development_dependency('shotgun', '0.9')
   s.add_runtime_dependency('sinatra','1.4.5')
   s.add_runtime_dependency('nfsadmin', '0.0.3')
+  s.add_runtime_dependency('passenger', '4.0.41')
 end

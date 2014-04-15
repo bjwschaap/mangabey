@@ -10,9 +10,9 @@ module Mangabey
     exportsfile = '/etc/exports'
 
     set :static, true
-    set :public_folder, File.dirname(__FILE__) + '/static'
     set :bind, '0.0.0.0'
     set :port, 3333
+    set :public_folder, Proc.new { File.join(root, 'public') }
 
     get '/' do
       erb :index
