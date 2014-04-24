@@ -21,13 +21,13 @@ module Mangabey
     get '/exports' do
       puts 'Getting all shares'
       content_type :json
-      ({ :exports => Nfsadmin::Tasks.get_shares(exportsfile)}).to_json
+      JSON.pretty_generate({ :exports => Nfsadmin::Tasks.get_shares(exportsfile)})
     end
 
     get '/exports/*' do
       puts  "Finding share: /#{params[:splat][0]}"
       content_type :json
-      Nfsadmin::Tasks.get_share(exportsfile, "/#{params[:splat][0]}").to_json
+      JSON.pretty_generate(Nfsadmin::Tasks.get_share(exportsfile, "/#{params[:splat][0]}"))
     end
 
     post '/exports/*' do
@@ -38,12 +38,15 @@ module Mangabey
         fail 'Must POST a valid JSON document'
       end
       location = '/' + params[:splat][0]
+      user = @request_payload['owner']
+      group = @request_payload['group']
+      mode = @request_payload['mode']
       acl = @request_payload['acl']
       # Bug in nfsadmin for now: only 1 address+option combo allowed..
       address = acl[0]['address']
       options = acl[0]['options']
       puts "Creating new share: #{location} with options: #{address}(#{options})"
-      Nfsadmin::Tasks.create_share(exportsfile,location,address,options,true)
+      Nfsadmin::Tasks.create_share(exportsfile,location,address,options,true,user,group, mode)
       Nfsadmin::Tasks.reload_config
     end
 
