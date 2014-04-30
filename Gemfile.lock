@@ -85,11 +85,11 @@ PLATFORMS
 
 DEPENDENCIES
   aruba (~> 0.5)
-  capybara
-  cucumber-sinatra
+  capybara (~> 2.2)
+  cucumber-sinatra (~> 0.5.0)
   mangabey!
   passenger (~> 4.0)
   rake (~> 10.2)
   rdoc (~> 4.1)
-  rspec
+  rspec (~> 2.14)
   shotgun (= 0.9)
