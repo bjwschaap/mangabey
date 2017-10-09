@@ -28,5 +28,5 @@ eos
   s.add_development_dependency('capybara', '~> 2.2')
   s.add_development_dependency('cucumber-sinatra', '~> 0.5.0')
   s.add_runtime_dependency('sinatra','1.4.5')
-  s.add_runtime_dependency('nfsadmin', '0.0.7')
+  s.add_runtime_dependency('nfsadmin', '0.0.8')
 end
