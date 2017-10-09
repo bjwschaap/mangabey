@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    mangabey (0.0.4)
-      nfsadmin (= 0.0.7)
+    mangabey (0.0.5)
+      nfsadmin (= 0.0.8)
       sinatra (= 1.4.5)
 
 GEM
@@ -42,7 +42,7 @@ GEM
     mini_portile (0.5.3)
     multi_json (1.9.2)
     multi_test (0.1.1)
-    nfsadmin (0.0.7)
+    nfsadmin (0.0.8)
       gli (~> 2.9)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
@@ -85,11 +85,11 @@ PLATFORMS
 
 DEPENDENCIES
   aruba (~> 0.5)
-  capybara
-  cucumber-sinatra
+  capybara (~> 2.2)
+  cucumber-sinatra (~> 0.5.0)
   mangabey!
   passenger (~> 4.0)
   rake (~> 10.2)
   rdoc (~> 4.1)
-  rspec
+  rspec (~> 2.14)
   shotgun (= 0.9)
